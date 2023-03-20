@@ -23,8 +23,6 @@ namespace TowerDefence.WaveOfEnemies
         private AbstractFactory abstractFactory;
         private WaveCounter waveCounter;
 
-        public event Action<GameObject> OnCreateEnemy;
-
         public void Construct(GameObject _target, List<Transform> _spawnPoints, CurrencyAnimation _currencyAnimation, WaveCounter _waveCounter)
         {
             target = _target;
